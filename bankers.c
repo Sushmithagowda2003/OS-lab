@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<conio.h>
+
 void main(){
     int
 k=0,output[10],d=0,t=0,ins[5],i,avail[5],allocated[10][5],need[10][5],MAX[10][5],pno,P[10],j,rz,count=0;
@@ -19,7 +19,7 @@ k=0,output[10],d=0,t=0,ins[5],i,avail[5],allocated[10][5],need[10][5],MAX[10][5]
   printf("%c",(i+97));
   printf("\n");
   for(i=0;i<pno;i++){
-    p[i]=i;
+    P[i]=i;
     printf("P[%d]",P[i]);
     for(j=0;j<rz;j++){
         scanf("%d",&allocated[i][j]);
@@ -63,5 +63,5 @@ k=0,output[10],d=0,t=0,ins[5],i,avail[5],allocated[10][5],need[10][5],MAX[10][5]
   for(i=0;i<k;i++)
   printf("P[%d]",output[i]);
   printf(">");
-  getch();
+
 }
